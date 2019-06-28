@@ -1,5 +1,5 @@
 from flask import make_response, jsonify, Flask, request, Blueprint, make_response
-from tasks_model import Tasks
+from app.models.tasks_model import Tasks
 
 tasks = Blueprint('tasks', __name__, url_prefix='/taskMS/api/v1')
 
