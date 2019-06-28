@@ -9,9 +9,9 @@ def create_task():
 
     title = data['title']
     description = data['description']
-    createdDate = data['createdDate']
-    startDate = data['startDate']
-    endDate = data['endDate']
+    # createdDate = data['createdDate']
+    # startDate = data['startDate']
+    # endDate = data['endDate']
 
     payload = Tasks(title, description)
     new_task = payload.create_task()
