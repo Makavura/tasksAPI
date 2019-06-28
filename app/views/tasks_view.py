@@ -3,7 +3,7 @@ from app.models.tasks_model import Tasks
 
 tasks = Blueprint('tasks', __name__, url_prefix='/taskMS/api/v1')
 
-@tasks.route('/tasks', method=['POST'])
+@tasks.route('/tasks', methods=['POST'])
 def create_task():
     data = request.json()
 
@@ -22,10 +22,10 @@ def create_task():
     }
     return jsonify(new_task, response_message), 201
 
-@tasks.route('/tasks', method=['GET'])
+@tasks.route('/tasks', methods=['GET'])
 def get_tasks():
     return jsonify(tasks), 200
 
-@tasks.route('/tasks/<int:id>', method=['GET'])
+@tasks.route('/tasks/<int:id>', methods=['GET'])
 def get_task():
     return jsonify(tasks[int(id)-1])
