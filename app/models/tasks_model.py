@@ -15,14 +15,14 @@ class Tasks(object):
 
 
     def create_task(self):
-        task = dict(
+        task = {
             id = self.id,
             title = self.title,
             description = self.description,
             createdDate = self.createdDate,
             startDate = self.startDate,
             endDate = self.endDate
-        )
+        }
         Tasks.tasks.append(task)
         return task
 
