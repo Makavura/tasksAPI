@@ -40,7 +40,7 @@ class TestEndPoints(unittest.TestCase):
         )
         self.assertEqual(res.status_code, 200)
 
-    def test_get_task(self):
+    def test_get_task(self, id):
         res = self.client.get(
             "/taskMS/api/v1/tasks/1",
             headers={"content-type": "application/json"}
