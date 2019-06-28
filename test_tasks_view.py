@@ -2,7 +2,7 @@ import json
 import unittest
 from run import app
 
-from tasks_view import *
+from app.views.tasks_view import *
 
 
 class TestEndPoints(unittest.TestCase):
