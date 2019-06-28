@@ -1,4 +1,4 @@
-from flask import flask
+from flask import Flask
 from instance.config import *
 from app.views.tasks_view import *
 
