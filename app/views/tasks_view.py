@@ -5,7 +5,7 @@ tasks = Blueprint('tasks', __name__, url_prefix='/taskMS/api/v1')
 
 @tasks.route('/tasks', methods=['POST'])
 def create_task():
-    data = request.json()
+    data = request.get_json()
 
     title = data['title']
     description = data['description']
